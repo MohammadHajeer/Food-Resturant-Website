@@ -25,6 +25,7 @@ let currentUser; // current user who is signed in
 // WHen the page is loaded
 window.onload = () => {
   document.body.classList.remove("backdrop-bg");
+  document.body.classList.remove("prevent-scroll")
   loader.style.display = "none";
   // Pizza filter (default)
   foodsFetching("Pizza");
@@ -123,13 +124,14 @@ function popupLogin() {
 const openCartButton = document.querySelector(".open-cart");
 openCartButton.onclick = () => {
   cart.classList.add("opens");
+  document.body.classList.add("prevent-scroll");
 };
 
 // Close cart for small screens
 const closeCartButton = document.querySelector(".cart .close-cart");
 closeCartButton.onclick = () => {
   cart.classList.remove("opens");
-  // profileButton.click();
+  document.body.classList.remove("prevent-scroll");
 };
 
 // Getting the data from the JSON FIle
@@ -343,7 +345,7 @@ function addFoodToCart(e) {
     return bool;
   }
 }
-console.log(foodEmptyMessage);
+
 function addFavFoods(e) {
   let btn = e.currentTarget;
   let foodCode = btn.parentElement.getAttribute("data-code");
@@ -590,13 +592,16 @@ function addRemoveClass(e, add, remove) {
 // Logout Button
 import { createLogoutBox } from "./common.js";
 logoutButton.onclick = () => {
+  document.body.classList.add("prevent-scroll");
   createLogoutBox(cancelConfirmation, proceedConfirmation);
 
   function cancelConfirmation() {
+    document.body.classList.remove("prevent-scroll");
     document.body.classList.remove("backdrop-bg");
     document.body.children[0].remove();
   }
   function proceedConfirmation() {
+    document.body.classList.remove("prevent-scroll");
     window.localStorage.currentUser = "";
     signupForm.classList.remove("signed-in");
     signedUser(false);
@@ -828,6 +833,7 @@ function saveToUsersArray() {
 
 // Onclicking the checkout button, it will create a cart list containing the foods selected
 checkOutButton.onclick = () => {
+  document.body.classList.add("prevent-scroll");
   let cartList = document.createElement("div");
   cartList.className = "cart-list-orders";
 
@@ -930,6 +936,7 @@ checkOutButton.onclick = () => {
   document.body.classList.add("backdrop-bg");
 
   function backToOrder() {
+    document.body.classList.remove("prevent-scroll");
     document.body.children[0].remove();
     document.body.classList.remove("backdrop-bg");
   }
@@ -958,6 +965,7 @@ checkOutButton.onclick = () => {
       width += 50;
       progressBar.style.width = `${width}%`;
     }, 500);
+    document.body.classList.remove("prevent-scroll");
   }
 
   function addBill() {

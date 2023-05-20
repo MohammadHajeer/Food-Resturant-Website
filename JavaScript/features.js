@@ -75,6 +75,7 @@ function createFeatures() {
 
 window.onload = () => {
   document.body.classList.remove("backdrop-bg");
+  document.body.classList.remove("prevent-scroll");
   loader.style.display = "none";
 
   createFeatures();

@@ -18,6 +18,7 @@ let users;
 // Onloading the page
 window.onload = () => {
   document.body.classList.remove("backdrop-bg");
+  document.body.classList.remove("prevent-scroll");
   loader.style.display = "none";
 
   if (window.localStorage.currentUser) {

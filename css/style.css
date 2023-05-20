@@ -62,6 +62,9 @@ body.backdrop-bg::before {
   transition: 0.3s;
   z-index: 1000;
 }
+body.prevent-scroll {
+  overflow: hidden;
+}
 ul {
   list-style: none;
 }
