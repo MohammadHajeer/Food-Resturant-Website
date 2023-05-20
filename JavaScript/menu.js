@@ -636,6 +636,8 @@ function signedUser(status) {
     logoutButton.style.display = "block";
 
     favFilter.style.display = "flex";
+
+    checkOutButton.style.pointerEvents = "all"
   } else {
     // Back to the signup page
     signupForm.innerHTML = "";
@@ -646,6 +648,8 @@ function signedUser(status) {
     logoutButton.style.display = "none";
 
     favFilter.style.display = "none";
+
+    checkOutButton.style.pointerEvents = "none"
   }
   foodFilters[0].click();
   userProfile();

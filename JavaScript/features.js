@@ -24,22 +24,22 @@ logoutButton.onclick = () => {
 };
 // Features
 const features = [
-  "The guest can view all pages expect the profile page.",
-  "The guest can change the theme of the website dark/light.",
-  "While the guest is viewing the website a popup will start appearing reminding the guest to signup/login.",
-  "The guest can signup/login to be a user.",
-  "The website contains a food filters.",
-  "The user can access all pages including ordering food.",
-  "The data of the user name, email, orders... will be saved in the local storage.",
-  "The user can make another account without losing the first account.",
-  "While the user is ordering food the total price will be displayed in the debit card.",
-  "After revising the orders the user can press on checkout then a checkout list will appear.",
-  "When the user press on buy button a bill of the order will be saved and add to the bill history.",
-  "The user can add list of his/her favourite foods by pressing the heart button.",
-  "The user can update his/her personal info.",
-  "The user can upload a photo.",
-  "The user can clear the bill history.",
-  "The user can logout.",
+  "The guest can effortlessly access all pages, except for the exclusive profile page.",
+  "The guest has the freedom to seamlessly switch between the captivating dark and light themes of the website.",
+  "While the guest is immersed in exploring the website, an attention-grabbing popup relentlessly reminds them to swiftly sign up or log in.",
+  "The guest is warmly welcomed to elevate their experience by seamlessly signing up or logging in to become an esteemed user.",
+  "The website boasts an exceptional range of food filters, enabling users to easily refine their culinary preferences.",
+  "The user enjoys unrestricted access to all pages, including the delightful option to place food orders.",
+  "The user's valuable personal information, such as their name, email, and orders, is securely stored in the local storage for their convenience.",
+  "The user has the remarkable ability to create multiple accounts, ensuring utmost flexibility and convenience.",
+  "While the user indulges in ordering delectable food, the total price is prominently displayed on the debit card, heightening the anticipation of a satisfying transaction.",
+  "Upon meticulously reviewing their selections, the user can confidently proceed to the checkout process, where a comprehensive and visually appealing checkout list awaits.",
+  "With a simple press of the buy button, an immaculate and detailed bill of the order is instantly generated and seamlessly added to the user's cherished bill history.",
+  "The user is empowered to curate a personalized collection of favorite foods, effortlessly saving them by affectionately pressing the heart button.",
+  "The user has the privilege to effortlessly update their personal information, ensuring their profile remains current and reflective of their individuality.",
+  "The user can seamlessly upload a captivating photo, adding a personal touch and enhancing their unique presence within the platform.",
+  "The user is graciously offered the option to effortlessly clear their bill history, maintaining a streamlined and organized account.",
+  "The user can confidently and conveniently log out, knowing their privacy and security are respected and safeguarded.",
 ];
 
 function createFeatures() {
