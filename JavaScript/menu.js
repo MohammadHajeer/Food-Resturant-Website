@@ -1,4 +1,5 @@
 // Declaring variables
+const loader = document.getElementById("loader");
 const dashboardLinks = document.querySelectorAll(".links li a");
 const profileImage = document.getElementById("profileImage");
 const scrollButton = document.getElementById("scrollButton");
@@ -23,6 +24,8 @@ let usersArray; // users who have accounts
 let currentUser; // current user who is signed in
 // WHen the page is loaded
 window.onload = () => {
+  document.body.classList.remove("backdrop-bg");
+  loader.style.display = "none";
   // Pizza filter (default)
   foodsFetching("Pizza");
   if (window.localStorage.users) {

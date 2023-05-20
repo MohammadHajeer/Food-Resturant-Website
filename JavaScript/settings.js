@@ -1,4 +1,5 @@
 // Declaring variables
+const loader = document.getElementById("loader");
 const generalInfoInputs = document.querySelectorAll(
   ".general-info-box .informations .info input"
 );
@@ -9,13 +10,16 @@ const billsContainer = document.querySelector(".orders");
 const profileImage = document.getElementById("profileImage");
 const logoutButton = document.getElementById("logout");
 const historyButton = document.getElementById("clear-history");
-const emptyMessage = document.getElementById("message")
+const emptyMessage = document.getElementById("message");
 let bills;
 let currentUser;
 let users;
 
 // Onloading the page
 window.onload = () => {
+  document.body.classList.remove("backdrop-bg");
+  loader.style.display = "none";
+
   if (window.localStorage.currentUser) {
     bills = JSON.parse(window.localStorage.currentUser).bills;
     currentUser = JSON.parse(window.localStorage.currentUser);
@@ -140,7 +144,7 @@ updateProfileButton.onclick = () => {
 
     let saveEmail = false;
     users.forEach((u) => {
-      console.log(u.email)
+      console.log(u.email);
       if (u.email == currentUser.email) {
         u.firstName = generalInfoInputs[0].value;
         u.lastName = generalInfoInputs[1].value;

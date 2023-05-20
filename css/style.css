@@ -54,16 +54,6 @@ body.dark-mode {
   --text-color: white;
   --box-bg: rgb(56, 56, 56);
 }
-/* body.brown-theme {
-  --main-color: #190019;
-  --alt-main-color: #2b124c;
-  --bg-color: #fbe4d8;
-  --alt-bg-color: #dfb6b2;
-  --bg-backdrop: rgba(32, 32, 32, 0.6);
-  --box-shadow: #852f6c;
-  --text-color: black;
-  --box-bg: #fbe4d844;
-} */
 body.backdrop-bg::before {
   content: "";
   position: absolute;
@@ -111,6 +101,44 @@ a {
   animation: message-moves linear 5s infinite;
 }
 /* End Components */
+/* Start Loader */
+#loader {
+  width: 150px;
+  height: 150px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  box-shadow: 0 0 40px var(--main-color) inset;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  animation: loader 2s linear infinite;
+}
+@keyframes loader {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+    border-radius: 0;
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(90deg);
+    border-radius: 10%;
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+    border-radius: 20%;
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(270deg);
+    border-radius: 50%;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    border-radius: 0;
+  }
+}
+/* End Loader */
 /* Start Popup Boxes */
 .logout-confirmation-box,
 .login-advice-box {

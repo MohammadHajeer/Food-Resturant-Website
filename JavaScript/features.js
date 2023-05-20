@@ -1,4 +1,5 @@
 // Declaring variables
+const loader = document.getElementById("loader");
 const dashboardLinks = document.querySelectorAll(".links li a");
 const logoutButton = document.getElementById("logout");
 const featuresContainer = document.querySelector(
@@ -15,7 +16,7 @@ logoutButton.onclick = () => {
   }
   function proceedConfirmation() {
     window.localStorage.currentUser = "";
-    cancelConfirmation()
+    cancelConfirmation();
 
     logoutButton.style.display = "none";
     dashboardLinks[2].classList.add("guest");
@@ -73,6 +74,9 @@ function createFeatures() {
 }
 
 window.onload = () => {
+  document.body.classList.remove("backdrop-bg");
+  loader.style.display = "none";
+
   createFeatures();
 
   if (window.localStorage.currentUser) {
