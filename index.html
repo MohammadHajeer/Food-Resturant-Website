@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/Website-logo.svg">
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!-- Start Navigation -->
+  <div class="navigation">
+    <ul class="links">
+      <li>
+        <a data-text="Home" class="active" href="index.html">
+          <i class="fa fa-home"></i>
+        </a>
+      </li>
+      <li>
+        <a data-text="Features" href="features.html">
+          <i class="fa fa-info"></i>
+        </a>
+      </li>
+      <li>
+        <a data-text="Settings" href="settings.html" class="guest">
+          <i class="fa fa-gear"></i>
+        </a>
+      </li>
+      <li>
+        <button href="#" id="themeSwitcher">
+          <i class="fa fa-moon"></i>
+        </button>
+      </li>
+    </ul>
+    <button id="logout" href="#">
+      <i class="fa-solid fa-right-from-bracket"></i>
+    </button>
+  </div>
+  <!-- End Navigation -->
+  <!-- Start content -->
+  <div class="content home">
+    <div class="header">
+      <h2>
+        Today's Menu&#128523;
+        <button class="open-cart button-style">
+          <i class="fa fa-arrow-right"></i>
+        </button>
+      </h2>
+      <div class="search-box">
+        <input type="text" placeholder="Search By Food Name" id="search" />
+        <label for="search">
+          <i class="fa fa-search"></i>
+        </label>
+      </div>
+    </div>
+    <div class="welcome-box">
+      <img src="./images/Delivery-Desgin-Image.png" alt="Motor-cycle-image" />
+      <div class="text">
+        <h3>Hello <span class="user-name">Guest</span>,</h3>
+        <p>
+          Read about what our website can do in the
+          <span>Features</span> section
+        </p>
+        <a href="features.html" class="button-style">Read Now!</a>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="title">
+        <h3>Menu Category</h3>
+        <button class="view-all all-foods">
+          View All
+          <span><i class="fa-solid fa-angle-right"></i></span>
+        </button>
+      </div>
+      <div class="categories">
+        <div class="category active">
+          <span class="emoji">&#127829;</span>
+          <p class="name">Pizza</p>
+          <span class="line"></span>
+          <span><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <div class="category">
+          <span class="emoji">&#127828;</span>
+          <p class="name">Burger</p>
+          <span class="line"></span>
+          <span><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <div class="category">
+          <span class="emoji">&#127789;</span>
+          <p class="name">Hotdog</p>
+          <span class="line"></span>
+          <span><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <div class="category">
+          <span class="emoji">&#128031;</span>
+          <p class="name">Fish</p>
+          <span class="line"></span>
+          <span><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <div class="category">
+          <span class="emoji">&#127839;</span>
+          <p class="name">Snacks</p>
+          <span class="line"></span>
+          <span><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <div class="category">
+          <span class="emoji">&#127865;</span>
+          <p class="name">Drinks</p>
+          <span class="line"></span>
+          <span><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <div class="category fav">
+          <span class="emoji">
+            <i class="fa fa-heart"></i>
+          </span>
+          <p class="name">Favourits</p>
+        </div>
+      </div>
+    </div>
+    <div class="foods">
+      <p id="message">Empty</p>
+    </div>
+    <button id="scrollButton" class="button-style">
+      <i class="fa fa-arrow-circle-up"></i>
+    </button>
+    <!-- Start Footer -->
+    <div id="footer">
+      copyright &copy; by Mohammad Hajeer and Khodor Hnein
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End content -->
+  <!-- Start Cart -->
+  <div class="cart">
+    <button class="close-cart button-style">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <div class="user-profile">
+      <div class="profile">
+        <img id="profileImage" src="./images/guest-pic.svg" alt="Profile Image" />
+        <div class="text">
+          <h4 class="user-name">Guest</h4>
+          <p>User</p>
+        </div>
+      </div>
+      <i class="fa-solid fa-angle-down"></i>
+    </div>
+    <div class="signup-form form">
+      <h2>SignUp</h2>
+      <form>
+        <div>
+          <label for="firstName">First Name</label>
+          <div>
+            <input data-match="\w+" id="firstName" type="text" placeholder="ex: Khodor" />
+            <i class="fa fa-user"></i>
+            <i class="fa fa-warning"></i>
+          </div>
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <div>
+            <input data-match="" id="lastName" type="text" placeholder="ex: Hajeer" />
+            <i class="fa fa-user"></i>
+            <i class="fa fa-warning"></i>
+          </div>
+        </div>
+        <div>
+          <label for="signupEmail">Email</label>
+          <div>
+            <input data-match="\w+@gmail.com" id="signupEmail" type="email" placeholder="ex: hello@gmail.com" />
+            <i class="fa fa-envelope"></i>
+            <i class="fa fa-warning"></i>
+          </div>
+        </div>
+        <div>
+          <label for="signupPassword">Password</label>
+          <div>
+            <input data-match="\w+" id="signupPassword" type="password" placeholder="ex: 123@3As" />
+            <i class="fa fa-lock"></i>
+            <i class="fa fa-warning"></i>
+          </div>
+        </div>
+        <button class="signup-button button-style">SignUp</button>
+        <p>
+          Already have an account ? <a id="loginSwitcher" href="#">Login</a>
+        </p>
+      </form>
+    </div>
+    <div class="login-form form">
+      <h2>Login</h2>
+      <form>
+        <div>
+          <label for="loginEmail">Email</label>
+          <div>
+            <input id="loginEmail" type="email" placeholder="Email" />
+            <i class="fa fa-envelope"></i>
+            <i class="fa fa-warning"></i>
+          </div>
+        </div>
+        <div>
+          <label for="loginPassword">Password</label>
+          <div>
+            <input id="loginPassword" type="password" placeholder="Password" />
+            <i class="fa fa-lock"></i>
+            <i class="fa fa-warning"></i>
+          </div>
+        </div>
+        <button class="login-button button-style">Login</button>
+        <a id="signupSwitcher" href="#"><i class="fa fa-arrow-left"></i> Signup</a>
+      </form>
+    </div>
+    <div class="debit-card">
+      <div class="title">
+        <p>Debit Card</p>
+        <p>Visa</p>
+      </div>
+      <div class="details">
+        <div class="amount">
+          <p>
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span id="money">0.00</span>
+          </p>
+          <p class="user-name">Guest</p>
+        </div>
+        <div class="serial-nb">
+          <i class="fa-solid fa-sim-card"></i>
+          <p class="number">123123156432</p>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="title">
+        <h3>Order Menu</h3>
+        <button class="view-all" id="remove-all">
+          Remove All
+          <span><i class="fa fa-trash"></i></span>
+        </button>
+      </div>
+      <button class="checkout-button button-style" id="check">Check Out</button>
+      <div class="orders"></div>
+    </div>
+  </div>
+  <!-- End Cart -->
+
+  <script src="./JavaScript/common.js" type="module"></script>
+  <script src="./JavaScript/menu.js" type="module"></script>
+</body>
+
+</html>

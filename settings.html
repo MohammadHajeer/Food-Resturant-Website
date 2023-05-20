@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Website-logo.svg">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <title>Settings</title>
+</head>
+
+<body class="dark-modee">
+    <!-- Start Navigation -->
+    <div class="navigation">
+        <ul class="links">
+            <li>
+                <a data-text="Home" href="index.html">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
+            <li>
+                <a data-text="Features" href="features.html">
+                    <i class="fa fa-info"></i>
+                </a>
+            </li>
+            <li>
+                <a data-text="Settings" class="active" href="settings.html">
+                    <i class="fa fa-gear"></i>
+                </a>
+            </li>
+            <li>
+                <button id="themeSwitcher">
+                    <i class="fa fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+        <button id="logout" href="#">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+    </div>
+    <!-- End Navigation -->
+    <!-- Start Content -->
+    <div class="content settings">
+        <h1 class="page-title">Settings</h1>
+        <div class="settings-container">
+            <div class="general-info-box">
+                <div>
+                    <div class="title">
+                        <h2>General Info</h2>
+                        <p>General information about your account</p>
+                    </div>
+                    <div class="informations">
+                        <div class="info">
+                            <span>First Name</span>
+                            <div class="input-container">
+                                <input type="text" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <span>Last Name</span>
+                            <div class="input-container">
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <span>Email</span>
+                            <div class="email">
+                                <div class="input-container">
+                                    <input type="text" placeholder="o@nn.sa">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <span>Password</span>
+                            <div class="password">
+                                <div class="input-container">
+                                    <input type="password" placeholder="***">
+                                </div>
+                            </div>
+                        </div>
+                        <button id="updateButton">Update Profile</button>
+                    </div>
+                </div>
+                <div class="profile-pic">
+                    <img src="images/guest-pic.svg" alt="profile-Img" id="profileImage">
+                    <input style="display: none;" type="file" name="" id="choose-img" accept="image/*">
+                    <label for="choose-img" class="button-style" id="choose-img-button">
+                        <i class="fa fa-edit"></i> Change
+                    </label>
+                </div>
+            </div>
+            <div class="orders-box">
+                <div class="title">
+                    <h2>Orders History
+                        <button id="clear-history">
+                            <i class="fa fa-trash"></i>
+                            Clear History
+                        </button>
+                    </h2>
+                    <p>All food items you bought since your first login</p>
+                </div>
+                <div class="orders">
+                    <p id="message">
+                        Empty
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button id="scrollButton" class="button-style">
+            <i class="fa fa-arrow-circle-up"></i>
+        </button>
+        <!-- Start Footer -->
+        <div id="footer">
+            copyright &copy; by Mohammad Hajeer and Khodor Hnein
+        </div>
+        <!-- End Footer -->
+    </div>
+    <!-- End Content -->
+    <script src="./JavaScript/common.js" type="module"></script>
+    <script src="./JavaScript/settings.js" type="module"></script>
+</body>
+
+</html>

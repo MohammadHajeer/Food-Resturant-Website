@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Website-logo.svg">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <title>Features</title>
+</head>
+
+<body>
+    <!-- Start Navigation -->
+    <div class="navigation">
+        <ul class="links">
+            <li>
+                <a data-text="Home" href="index.html">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
+            <li>
+                <a data-text="Features" class="active" href="features.html">
+                    <i class="fa fa-info"></i>
+                </a>
+            </li>
+            <li>
+                <a data-text="Settings" href="settings.html" class="guest">
+                    <i class="fa fa-gear"></i>
+                </a>
+            </li>
+            <li>
+                <button id="themeSwitcher">
+                    <i class="fa fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+        <button id="logout" href="#">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+    </div>
+    <!-- End Navigation -->
+    <!-- Start Content -->
+    <div class="content features">
+        <h1 class="page-title">Features</h1>
+        <div class="features-container"></div>
+        <button id="scrollButton" class="button-style">
+            <i class="fa fa-arrow-circle-up"></i>
+        </button>
+        <!-- Start Footer -->
+        <div id="footer">
+            copyright &copy; by Mohammad Hajeer and Khodor Hnein
+        </div>
+        <!-- End Footer -->
+    </div>
+    <!-- End Content -->
+    <script src="./JavaScript/common.js" type="module"></script>
+    <script src="./JavaScript/features.js" type="module"></script>
+</body>
+
+</html>

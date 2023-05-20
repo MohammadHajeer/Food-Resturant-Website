@@ -1,0 +1,402 @@
+[
+    {
+        "type": "Pizza",
+        "name": "Mushroom Pizza",
+        "stars": 4,
+        "price": 7.49,
+        "src": "./images/Mushroom-Pizza.jpg",
+        "code": "1"
+    },
+    {
+        "type": "Pizza",
+        "name": "Apizza",
+        "stars": 5,
+        "price": 9.99,
+        "src": "./images/Apizza.jpg",
+        "code": "2"
+    },
+    {
+        "type": "Pizza",
+        "name": "Detroit-Style Pizza",
+        "stars": 4,
+        "price": 7.56,
+        "src": "./images/Detroit-Style-Pizza.jpg",
+        "code": "3"
+    },
+    {
+        "type": "Pizza",
+        "name": "Fugazzeta Pizza",
+        "stars": 3,
+        "price": 5.67,
+        "src": "./images/Fugazzeta-Pizza.jpg",
+        "code": "4"
+    },
+    {
+        "type": "Pizza",
+        "name": "Genovese Pizza",
+        "stars": 2,
+        "price": 4.45,
+        "src": "./images/Genovese-Pizza.jpg",
+        "code": "5"
+    },
+    {
+        "type": "Pizza",
+        "name": "Grilled Pizza",
+        "stars": 4,
+        "price": 6.74,
+        "src": "./images/Grilled-Pizza.jpg",
+        "code": 6
+    },
+    {
+        "type": "Pizza",
+        "name": "Louis Pizza",
+        "stars": 4,
+        "price": 8.99,
+        "src": "./images/Louis-pizza.jpg",
+        "code": 7
+    },
+    {
+        "type": "Pizza",
+        "name": "Ortolana Pizza",
+        "stars": 5,
+        "price": 11.45,
+        "src": "./images/Ortolana-Pizza.jpg",
+        "code": 8
+    },
+    {
+        "type": "Pizza",
+        "name": "Pizza Cake",
+        "stars": 5,
+        "price": 15.35,
+        "src": "./images/Pizza-Cake.jpg",
+        "code": 9
+    },
+    {
+        "type": "Pizza",
+        "name": "Pizza Carbonara",
+        "stars": 3,
+        "price": 6.75,
+        "src": "./images/Pizza-Carbonara.jpg",
+        "code": 10
+    },
+    {
+        "type": "Pizza",
+        "name": "Pizza Rustica",
+        "stars": 4,
+        "price": 6.78,
+        "src": "./images/Pizza-Rustica.jpg",
+        "code": 11
+    },
+    {
+        "type": "Pizza",
+        "name": "Pizza Vegetariana",
+        "stars": 2,
+        "price": 7.89,
+        "src": "./images/Pizza-Vegetariana.jpg",
+        "code": 12
+    },
+    {
+        "type": "Pizza",
+        "name": "Pugliese Pizza",
+        "stars": 1,
+        "price": 9.89,
+        "src": "./images/Pugliese-Pizza.jpg",
+        "code": 13
+    },
+    {
+        "type": "Burger",
+        "name": "Bigfoot Burger",
+        "stars": 5,
+        "price": 12.5,
+        "src": "./images/Bigfoot-Burger.jpg",
+        "code": 14
+    },
+    {
+        "type": "Burger",
+        "name": "Cheddar Burger",
+        "stars": 4,
+        "price": 9.99,
+        "src": "./images/Cheddar-Burger.jpg",
+        "code": 15
+    },
+    {
+        "type": "Burger",
+        "name": "Cheese Burger",
+        "stars": 5,
+        "price": 15.89,
+        "src": "./images/Cheese-Burger.jpg",
+        "code": 16
+    },
+    {
+        "type": "Burger",
+        "name": "Fickle Pickle Burger",
+        "stars": 2,
+        "price": 7.99,
+        "src": "./images/Fickle-Pickle-Burger.jpg",
+        "code": 17
+    },
+    {
+        "type": "Burger",
+        "name": "Hangover Burger",
+        "stars": 4,
+        "price": 10.45,
+        "src": "./images/Hangover-Burger.jpg",
+        "code": 18
+    },
+    {
+        "type": "Burger",
+        "name": "Macaorni Burger",
+        "stars": 4,
+        "price": 11.25,
+        "src": "./images/Macaorni-Burger.jpg",
+        "code": 19
+    },
+    {
+        "type": "Burger",
+        "name": "Meteor Burger",
+        "stars": 5,
+        "price": 13.45,
+        "src": "./images/Meteor-Burger.jpg",
+        "code": 20
+    },
+    {
+        "type": "Burger",
+        "name": "Snuggy Burger",
+        "stars": 3,
+        "price": 6.85,
+        "src": "./images/Snuggy-Burger.jpg",
+        "code": 21
+    },
+    {
+        "type": "Hotdog",
+        "name": "Carolina Style Hotdog",
+        "stars": 4,
+        "price": 12.45,
+        "src": "./images/Carolina-Style-Hotdog.jpg",
+        "code": 22
+    },
+    {
+        "type": "Hotdog",
+        "name": "Half Smoke Hotdog",
+        "stars": 3,
+        "price": 9.85,
+        "src": "./images/Half-Smoke-Hotdog.jpg",
+        "code": 23
+    },
+    {
+        "type": "Hotdog",
+        "name": "Icelandic Hotdog",
+        "stars": 2,
+        "price": 7.98,
+        "src": "./images/Icelandic-Hotdog.jpg",
+        "code": 24
+    },
+    {
+        "type": "Hotdog",
+        "name": "Italian Hotdog",
+        "stars": 4,
+        "price": 13.56,
+        "src": "./images/Italian-Hotdog.jpg",
+        "code": 25
+    },
+    {
+        "type": "Hotdog",
+        "name": "Michigan Hotdog",
+        "stars": 5,
+        "price": 10.54,
+        "src": "./images/Michigan-Hotdog.jpg",
+        "code": 26
+    },
+    {
+        "type": "Hotdog",
+        "name": "Ripper Hotdog",
+        "stars": 5,
+        "price": 12.55,
+        "src": "./images/Ripper-Hotdog.jpg",
+        "code": 27
+    },
+    {
+        "type": "Hotdog",
+        "name": "Texas Tommy Hotdog",
+        "stars": 4,
+        "price": 11.45,
+        "src": "./images/Texas-Tommy-Hotdog.jpg",
+        "code": 28
+    },
+    {
+        "type": "Fish",
+        "name": "Catfish Stew",
+        "stars": 4,
+        "price": 14.55,
+        "src": "./images/Catfish-Stew.jpg",
+        "code": 29
+    },
+    {
+        "type": "Fish",
+        "name": "Pecan Crusted Fish",
+        "stars": 5,
+        "price": 12.40,
+        "src": "./images/Pecan-Crusted-Fish.jpg",
+        "code": 30
+    },
+    {
+        "type": "Fish",
+        "name": "Southern Fried Crappie",
+        "stars": 5,
+        "price": 15.89,
+        "src": "./images/Southern-Fried-Crappie.jpg",
+        "code": 31
+    },
+    {
+        "type": "Fish",
+        "name": "Tuna Tartare",
+        "stars": 3,
+        "price": 9.89,
+        "src": "./images/Tuna-Tartare.jpg",
+        "code": 32
+    },
+    {
+        "type": "Fish",
+        "name": "Sushi Dish",
+        "stars": 4,
+        "price": 20.11,
+        "src": "./images/Sushi-Dish.jpg",
+        "code": 33
+    },
+    {
+        "type": "Fish",
+        "name": "Thin Fried Catfish",
+        "stars": 3,
+        "price": 11.56,
+        "src": "./images/Thin-Fried-Catfish.jpg",
+        "code": 34
+    },
+    {
+        "type": "Snacks",
+        "name": "Apple slices with peanut butter",
+        "stars": 4,
+        "price": 14.55,
+        "src": "./images/Apple-slices-with-peanut-butter.jpg",
+        "code": 35
+    },
+    {
+        "type": "Snacks",
+        "name": "Baby carrots with blue cheese dressing",
+        "stars": 4,
+        "price": 12.42,
+        "src": "./images/Baby-carrots-with-blue-cheese-dressing.jpg",
+        "code": 36
+    },
+    {
+        "type": "Snacks",
+        "name": "Beef jerky or beef sticks",
+        "stars": 5,
+        "price": 19.99,
+        "src": "./images/Beef-jerky-or-beef-sticks.jpg",
+        "code": 37
+    },
+    {
+        "type": "Snacks",
+        "name": "Celery sticks with cream cheese",
+        "stars": 5,
+        "price": 17.54,
+        "src": "./images/Celery-sticks-with-cream-cheese.jpg",
+        "code": 38
+    },
+    {
+        "type": "Snacks",
+        "name": "Cucumber slices with hummus",
+        "stars": 4,
+        "price": 10.24,
+        "src": "./images/Cucumber-slices-with-hummus.jpg",
+        "code": 39
+    },
+    {
+        "type": "Snacks",
+        "name": "Dark chocolate and almonds",
+        "stars": 3,
+        "price": 12.43,
+        "src": "./images/Dark-chocolate-and-almonds.jpg",
+        "code": 40
+    },
+    {
+        "type": "Snacks",
+        "name": "Red bell pepper with guacamole",
+        "stars": 3,
+        "price": 12.65,
+        "src": "./images/Red-bell-pepper-with-guacamole.jpg",
+        "code": 41
+    },
+    {
+        "type": "Drinks",
+        "name": "Chocolate Milk",
+        "stars": 5,
+        "price": 7.88,
+        "src": "./images/Chocolate-Milk.jpg",
+        "code": 42
+    },
+    {
+        "type": "Drinks",
+        "name": "Green Tea",
+        "stars": 4,
+        "price": 6.78,
+        "src": "./images/Green-Tea.jpg",
+        "code": 43
+    },
+    {
+        "type": "Drinks",
+        "name": "Coffee",
+        "stars": 5,
+        "price": 9.89,
+        "src": "./images/Coffee.jpg",
+        "code": 44
+    },
+    {
+        "type": "Drinks",
+        "name": "Hot chocolate",
+        "stars": 4,
+        "price": 10.05,
+        "src": "./images/Hot-chocolate.jpg",
+        "code": 45
+    },
+    {
+        "type": "Drinks",
+        "name": "Iced-Tea",
+        "stars": 4,
+        "price": 5.5,
+        "src": "./images/Iced-Tea.jpg",
+        "code": 46
+    },
+    {
+        "type": "Drinks",
+        "name": "Lemonade",
+        "stars": 4,
+        "price": 4.66,
+        "src": "./images/Lemonade.jpg",
+        "code": 47
+    },
+    {
+        "type": "Drinks",
+        "name": "Milk",
+        "stars": 5,
+        "price": 3.4,
+        "src": "./images/Milk.jpg",
+        "code": 48
+    },
+    {
+        "type": "Drinks",
+        "name": "Milkshake",
+        "stars": 5,
+        "price": 7.64,
+        "src": "./images/Milkshake.jpg",
+        "code": 49
+    },
+    {
+        "type": "Drinks",
+        "name": "Soda",
+        "stars": 4,
+        "price": 3.14,
+        "src": "./images/Soda.jpg",
+        "code": 50
+    }
+]
