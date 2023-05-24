@@ -1386,6 +1386,7 @@ a {
   height: 200px;
   border-radius: 50%;
   border: 10px solid var(--box-bg);
+  object-fit: cover;
   /* box-shadow: 0 0 0px 5px var(--main-color); */
 }
 .general-info-box .informations .info {
